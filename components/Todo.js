@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { StatusBar } from "react-native";
-import { SafeAreaView, Platform } from "react-native";
+import { SafeAreaView,StatusBar, Platform } from "react-native";
 import { StyleSheet, Text, TextInput, View } from "react-native";
 import { Input, Button } from "react-native-elements";
 import { v4 as uuidv4 } from "uuid";
@@ -96,6 +95,7 @@ const Todo = () => {
         paddingTop: Platform.OS === "android" && StatusBar.currentHeight,
       }}
     >
+    <StatusBar barStyle="dark-content"/>
       <View
         style={{
           paddingHorizontal: 50,
